@@ -38,16 +38,13 @@ colorscheme desert
 " Use spaces instead of tabs
 set expandtab
 
-" Set the number of spaces per tab
-set tabstop=4
+" Set the default indentation to 2 spaces for all files
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
-" Set the number of spaces used for auto-indenting
-set shiftwidth=4
-
-" Enable smart indentation
+" Enable smart and auto-indentation
 set smartindent
-
-" Enable auto-indentation
 set autoindent
 
 " Highlight matching parentheses
@@ -134,4 +131,8 @@ let g:neoformat_enabled_ini = ['configparser']
 " Autoformat on save
 autocmd BufWritePre *.rs,*.py,*.go,*.php,*.sql,*.html,*.css,*.c,*.cpp,*.yaml,*.toml,*.xml,*.yml,*.tf,*.md,*.ini Neoformat
 
+" Highlight trailing whitespace in all files
+autocmd BufRead,BufNewFile * match Error /\s\+$/
 
+" Set backspace so it acts more intuitively
+set backspace=indent,eol,start
