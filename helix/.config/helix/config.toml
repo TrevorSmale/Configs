@@ -1,2 +1,12 @@
-# Theme configuration
-theme = "gruvbox-dark"  # Change to your preferred theme
+theme = "tokyonight"
+
+[editor]
+line-number = "relative"
+cursorline = true
+auto-format = true
+mouse = true
+true-color = true
+
+[editor.lsp]
+enable = true
+display-messages = true
