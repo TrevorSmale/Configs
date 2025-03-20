@@ -1,0 +1,29 @@
+[[language]]
+name = "go"
+scope = "source.go"
+file-types = ["go"]
+indent = { tab-width = 4, unit = "    " }
+auto-format = true
+language-servers = ["gopls"]
+
+[[language]]
+name = "markdown"
+scope = "text.markdown"
+file-types = ["md"]
+indent = { tab-width = 2, unit = "  " }
+language-servers = ["marksman"]
+
+[[language]]
+name = "yaml"
+scope = "source.yaml"
+file-types = ["yaml", "yml"]
+indent = { tab-width = 2, unit = "  " }
+language-servers = ["yaml-language-server"]
+
+[[language]]
+name = "rust"
+scope = "source.rust"
+file-types = ["rs"]
+indent = { tab-width = 4, unit = "    " }
+auto-format = true
+language-servers = ["rust-analyzer"]
