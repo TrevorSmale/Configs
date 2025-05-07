@@ -1,0 +1,23 @@
+# ~/.config/helix/config.toml
+#
+# theme = "monokai"
+#
+# [editor]
+# line-number = "relative"
+# cursorline = true
+# color-modes = true
+# auto-save = true
+# shell = ["bash", "-c"]
+#
+# [editor.statusline]
+# left = ["mode", "spinner", "file-name"]
+# center = ["diagnostics"]
+# right = ["file-type", "position", "position-percentage", "total-line-numbers"]
+#
+# [editor.cursor-shape]
+# insert = "bar"
+# normal = "block"
+# select = "underline"
+#
+# [keys.normal]
+# C-s = ":w"
